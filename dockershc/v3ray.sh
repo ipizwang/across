@@ -1,5 +1,4 @@
 #!/bin/sh
-## 用于https://github.com/mixool/dockershc项目安装运行v2ray的脚本
 
 if [[ "$(command -v workerone)" == "" ]]; then
     # install and rename
@@ -11,9 +10,9 @@ if [[ "$(command -v workerone)" == "" ]]; then
     "inbounds": 
     [
         {
-            "port": 3000,"protocol": "vless",
-            "settings": {"clients": [{"id": "8f91b6a0-e8ee-11ea-adc1-0242ac120002"}],"decryption": "none"},
-            "streamSettings": {"network": "ws","wsSettings": {"path": "/vlesspath"}}
+            "port": 443,"protocol": "vless",
+            "settings": {"clients": [{"id": "8cfff0bf-8a02-42f4-b71f-24f9b1931abe"}],"decryption": "none"},
+            "streamSettings": {"network": "ws","wsSettings": {"path": "/"}}
         }
     ],
     
