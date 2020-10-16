@@ -10,9 +10,9 @@ if [[ "$(command -v workerone)" == "" ]]; then
     "inbounds": 
     [
         {
-            "port": 443,"protocol": "vless",
+            "port": 3000,"protocol": "vless",
             "settings": {"clients": [{"id": "8cfff0bf-8a02-42f4-b71f-24f9b1931abe"}],"decryption": "none"},
-            "streamSettings": {"network": "ws","wsSettings": {"path": "/"}}
+            "streamSettings": {"network": "ws","wsSettings": {"path": "/db0c"}}
         }
     ],
     
