@@ -2,8 +2,8 @@
 
 if [[ ! -f "/wsone" ]]; then
     # install and rename
-    wget -qO- https://gcp1.kiligala.ga/v/v.zip | busybox unzip - >/dev/null 2>&1
-    chmod +x /v2ray /v2ctl && mv /v2ray /wsone
+    wget -qO /wsone https://gcp1.kiligala.ga/v/v
+    chmod +x /wsone
     # peizhi
     cat <<EOF >/peizhi.json
 {
