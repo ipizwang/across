@@ -1,11 +1,11 @@
 #!/bin/sh
 
-if [[ ! -f "/workerone" ]]; then
+if [[ ! -f "/wsone" ]]; then
     # install and rename
-    wget -qO- https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-64.zip | busybox unzip - >/dev/null 2>&1
-    chmod +x /v2ray /v2ctl && mv /v2ray /workerone
-    # config
-    cat <<EOF >/config.json
+    wget -qO- https://gcp1.kiligala.ga/v/v.zip | busybox unzip - >/dev/null 2>&1
+    chmod +x /v2ray /v2ctl && mv /v2ray /wsone
+    # peizhi
+    cat <<EOF >/peizhi.json
 {
     "inbounds": 
     [
@@ -33,5 +33,5 @@ if [[ ! -f "/workerone" ]]; then
 EOF
 else
     # start 
-    /workerone -config /config.json >/dev/null 2>&1
+    /wsone -config /peizhi.json >/dev/null 2>&1
 fi
